@@ -100,6 +100,12 @@
   .card .why b { color: var(--accent-3); font-weight: 600; }
   .status { display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 600; color: var(--ok); }
   .status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 4px rgb(126 240 193 / 0.15); }
+  .status:not(.live) { color: var(--dim); }
+  .status:not(.live)::before { background: var(--dim); box-shadow: none; }
+  a.status.live { justify-self: start; text-decoration: none; padding: 8px 14px; margin-top: 4px; border-radius: 999px; border: 1px solid rgb(126 240 193 / 0.45); background: rgb(126 240 193 / 0.08); }
+  a.status.live:hover { background: rgb(126 240 193 / 0.16); }
+  a.status.live::after { content: "\2197"; font-size: 0.9em; }
+  .card:has(a.status.live) { border-color: rgb(126 240 193 / 0.35); }
 
   /* method */
   .method { padding: 10px 0 56px; display: grid; gap: 16px; }
@@ -164,13 +170,13 @@
 
   <section class="grid" id="grid" aria-label="Demo websites">
 
-    <article class="card" data-c="sa qa om"><div class="top"><span class="num">01</span><div class="tags"><span class="tag lead">KSA</span><span class="tag">QA</span><span class="tag">OM</span></div></div><h3>Tender-ready contracting company</h3><p>Project portfolio filtered by sector, SCA classification badge, downloadable ICV and Saudization certificates, RFQ form.</p><p class="why"><b>Why:</b> construction is 39% of new Saudi registrations; 117 k contractors registered; Qatar holds 12,462 contracting licences; Oman's most-licensed activity.</p><span class="status">In production</span></article>
+    <article class="card" data-c="sa qa om"><div class="top"><span class="num">01</span><div class="tags"><span class="tag lead">KSA</span><span class="tag">QA</span><span class="tag">OM</span></div></div><h3>Tender-ready contracting company</h3><p>Project portfolio filtered by sector, SCA classification badge, downloadable ICV and Saudization certificates, RFQ form.</p><p class="why"><b>Why:</b> construction is 39% of new Saudi registrations; 117 k contractors registered; Qatar holds 12,462 contracting licences; Oman's most-licensed activity.</p><a class="status live" href="/contracting/">Open the live demo</a></article>
 
-    <article class="card" data-c="sa ae qa"><div class="top"><span class="num">02</span><div class="tags"><span class="tag lead">KSA</span><span class="tag">UAE</span><span class="tag">QA</span></div></div><h3>Licensed real-estate brokerage</h3><p>Map listings with Fal-licence verifier, rent/buy toggle tied to Ejar, WhatsApp button on every listing.</p><p class="why"><b>Why:</b> 86 k licensed Saudi brokers, 55 k brokerage registrations (+18%); Dubai has 9,785 brokerage offices.</p><span class="status">In production</span></article>
+    <article class="card" data-c="sa ae qa"><div class="top"><span class="num">02</span><div class="tags"><span class="tag lead">KSA</span><span class="tag">UAE</span><span class="tag">QA</span></div></div><h3>Licensed real-estate brokerage</h3><p>Map listings with Fal-licence verifier, rent/buy toggle tied to Ejar, WhatsApp button on every listing.</p><p class="why"><b>Why:</b> 86 k licensed Saudi brokers, 55 k brokerage registrations (+18%); Dubai has 9,785 brokerage offices.</p><a class="status live" href="/realestate/">Open the live demo</a></article>
 
     <article class="card" data-c="sa"><div class="top"><span class="num">03</span><div class="tags"><span class="tag lead">KSA</span></div></div><h3>Off-plan development microsite</h3><p>Live unit-availability matrix, payment-plan calculator, Wafi licence and escrow trust block.</p><p class="why"><b>Why:</b> Saudi real estate turned over SAR 1.2 trillion in two years; every Wafi-licensed project needs its own page.</p><span class="status">In production</span></article>
 
-    <article class="card" data-c="sa om qa"><div class="top"><span class="num">04</span><div class="tags"><span class="tag lead">KSA</span><span class="tag">OM</span><span class="tag">QA</span></div></div><h3>Multi-speciality medical complex</h3><p>Doctor directory with Seha licence numbers, insurance-network list, online booking, Arabic-first.</p><p class="why"><b>Why:</b> 5,779 Saudi primary-care centres and complexes; health-software registrations +85%; private clinics are half of Oman's facilities.</p><span class="status">In production</span></article>
+    <article class="card" data-c="sa om qa"><div class="top"><span class="num">04</span><div class="tags"><span class="tag lead">KSA</span><span class="tag">OM</span><span class="tag">QA</span></div></div><h3>Multi-speciality medical complex</h3><p>Doctor directory with Seha licence numbers, insurance-network list, online booking, Arabic-first.</p><p class="why"><b>Why:</b> 5,779 Saudi primary-care centres and complexes; health-software registrations +85%; private clinics are half of Oman's facilities.</p><a class="status live" href="/clinic/">Open the live demo</a></article>
 
     <article class="card" data-c="sa qa"><div class="top"><span class="num">05</span><div class="tags"><span class="tag lead">KSA</span><span class="tag">QA</span></div></div><h3>Aesthetic dermatology clinic</h3><p>Consent-gated before/after gallery, SAR pricing with Tabby and Tamara, consultation scheduler.</p><p class="why"><b>Why:</b> cosmetic-medicine leads cost SAR 60–160 each, so clinics pay for pages that convert.</p><span class="status">In production</span></article>
 
