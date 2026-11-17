@@ -88,8 +88,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   --sky: #A9D4F0;
   --sky-2: #7FBDE6;
   --sky-3: #DCEEFA;
-  --orange: #F2621B;
-  --orange-ink: #C2470B;
+  --orange: #F54AB6;
+  --orange-ink: #D40C8A;
   --on-ink: #F2F4F5;
   --on-ink-muted: #A3A9B0;
   --b: 2px solid var(--ink);
@@ -806,7 +806,7 @@ body .tray__clear:is(:hover, :focus-visible) { color: var(--ink); }
       <svg viewBox="0 0 760 340" data-draw role="img" aria-labelledby="fr-t">
         <title id="fr-t">Flavour after roasting: coffee is gassy for the first week, tastes best from day 7 to day 28 for filter and day 10 to day 35 for espresso, then slowly fades</title>
         <rect x="186.3" y="30" width="301.5" height="250" fill="#DCEEFA"/>
-        <rect x="229.4" y="30" width="359" height="250" fill="none" stroke="#F2621B" stroke-width="3" stroke-dasharray="10 8"/>
+        <rect x="229.4" y="30" width="359" height="250" fill="none" stroke="#F54AB6" stroke-width="3" stroke-dasharray="10 8"/>
         <g class="fr__grid"><line x1="86" x2="690" y1="280" y2="280"/><line x1="86" x2="86" y1="30" y2="280"/><line x1="86" x2="690" y1="155" y2="155" stroke-dasharray="4 6"/></g>
         <path data-line d="M86 230C120 190 160 110 220 78S330 60 420 66S560 92 690 150" fill="none" stroke="#111214" stroke-width="4"/>
         <g class="fr__ax">
@@ -814,7 +814,7 @@ body .tray__clear:is(:hover, :focus-visible) { color: var(--ink); }
           <text x="388" y="332" text-anchor="middle">Days after roasting</text>
           <text x="76" y="40" text-anchor="end">Peak</text><text x="76" y="276" text-anchor="end">Flat</text>
         </g>
-        <g class="fr__lab"><text x="196" y="52">Filter window, day 7 to 28</text><text x="602" y="22" text-anchor="end" fill="#C2470B">Espresso window, day 10 to 35</text><text x="100" y="262">Too gassy</text></g>
+        <g class="fr__lab"><text x="196" y="52">Filter window, day 7 to 28</text><text x="602" y="22" text-anchor="end" fill="#D40C8A">Espresso window, day 10 to 35</text><text x="100" y="262">Too gassy</text></g>
       </svg>
     </div>
     <div class="fr__copy">
@@ -1227,7 +1227,7 @@ body .tray__clear:is(:hover, :focus-visible) { color: var(--ink); }
     var card = document.getElementById("bean-" + m[1]);
     if (card) {
       card.querySelector("[data-add]").click();
-      card.style.boxShadow = "8px 8px 0 #F2621B";
+      card.style.boxShadow = "8px 8px 0 #F54AB6";
       setTimeout(function () { card.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" }); }, 400);
     }
   }

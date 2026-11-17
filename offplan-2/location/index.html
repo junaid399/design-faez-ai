@@ -311,10 +311,7 @@ section[id] { scroll-margin-top: calc(var(--hd) + 16px); }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 
-/* Bright accent on primary calls to action (2026-10-26) */
-:root{--qm-pop:#FF6A1F;}
-.btn:not(.btn-line):not(.btn-dark){background:var(--qm-pop);border-color:var(--qm-pop);color:var(--ink);}
-.btn:not(.btn-line):not(.btn-dark):hover,.btn:not(.btn-line):not(.btn-dark):focus-visible{background:#FF8442;border-color:#FF8442;color:var(--ink);}
+/* 2026-11-17: the orange call-to-action override of 2026-10-26 was removed */
 
 /* ---------- hero: image left, copy right ---------- */
 .lh { padding-bottom: clamp(64px, 8vw, 120px); }

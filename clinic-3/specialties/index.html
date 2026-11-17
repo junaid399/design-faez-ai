@@ -90,9 +90,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   --steel-ink: #10243A;
   --steel-2: #2F5880;
   --tint: #E6EDF4;
-  --amber: #F2A33A;
-  --amber-deep: #DB8B1E;
-  --amber-tint: #FCEBD2;
+  --amber: #10C3EF;
+  --amber-deep: #0A7896;
+  --amber-tint: #D1F3FC;
   --line: #DCE2E8;
   --line-2: #C6D0DA;
   --cardio: #C8553D;
@@ -171,7 +171,7 @@ body dl, body dd { margin: 0; }
 body .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: var(--r); font-family: var(--sans); font-weight: 600; font-size: 16px; line-height: 1; white-space: nowrap; transition: transform .3s var(--ease), background-color .25s, color .25s, box-shadow .25s; }
 body .btn i { font-size: 1.2em; }
 body .btn-amber { background: var(--amber); color: var(--ink); }
-body .btn-amber:hover, body .btn-amber:focus-visible { background: #F6B65E; color: var(--ink); transform: translateY(-2px); }
+body .btn-amber:hover, body .btn-amber:focus-visible { background: #45D2F5; color: var(--ink); transform: translateY(-2px); }
 body .btn-steel { background: var(--steel); color: #fff; }
 body .btn-steel:hover, body .btn-steel:focus-visible { background: var(--steel-deep); color: #fff; transform: translateY(-2px); }
 body .btn-ink { background: var(--ink); color: #fff; }
@@ -190,7 +190,7 @@ body .tlink:hover { color: var(--steel-deep); }
 body .tlink:hover i { transform: translateX(4px); }
 body .steel .tlink, body .ink-bg .tlink { color: #fff; }
 .chip { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 4px; font-size: .82rem; font-weight: 600; background: var(--tint); color: var(--steel-deep); line-height: 1.2; }
-.chip--amber { background: var(--amber-tint); color: #6E4206; }
+.chip--amber { background: var(--amber-tint); color: #065367; }
 
 .ticks { display: grid; gap: 9px; }
 .ticks li { position: relative; padding-left: 28px; font-size: .98rem; }
@@ -333,10 +333,7 @@ body .seg input { position: absolute; opacity: 0; inset: 0; width: 100%; height:
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
 
-/* Bright accent on primary calls to action (2026-10-26) */
-:root{--dh-pop:#FF6A1F;}
-body .btn-amber{background:var(--dh-pop);color:var(--ink);}
-body .btn-amber:hover,body .btn-amber:focus-visible{background:#FF8442;color:var(--ink);}
+/* 2026-11-17: the orange call-to-action override of 2026-10-26 was removed */
 
 /* ---------- hero: title + table of contents, then a wide photo band ---------- */
 .sph { padding: clamp(48px, 6vw, 88px) 0 clamp(64px, 7vw, 100px); }
@@ -476,7 +473,7 @@ body .btn-amber:hover,body .btn-amber:focus-visible{background:#FF8442;color:var
 <header class="dh-header" data-header>
   <div class="dh-header__in wrap">
     <a class="dh-logo" href="../" aria-label="Dar Al Hikma Specialist Centre, home">
-      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="#23466B"/><circle cx="20" cy="20.5" r="10.5" fill="none" stroke="#FFFFFF" stroke-width="2.2"/><path d="M9.5 20.5h21" stroke="#FFFFFF" stroke-width="2.2"/><circle cx="28.6" cy="11.6" r="3.1" fill="#F2A33A"/></svg>
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="#23466B"/><circle cx="20" cy="20.5" r="10.5" fill="none" stroke="#FFFFFF" stroke-width="2.2"/><path d="M9.5 20.5h21" stroke="#FFFFFF" stroke-width="2.2"/><circle cx="28.6" cy="11.6" r="3.1" fill="#10C3EF"/></svg>
       <span class="dh-logo__t"><b>Dar Al Hikma</b><span>Specialist Centre, Muscat</span></span>
       <span class="dh-logo__ar" lang="ar">دار الحكمة</span>
     </a>
@@ -497,7 +494,7 @@ body .btn-amber:hover,body .btn-amber:focus-visible{background:#FF8442;color:var
 <div class="dh-menu" id="dh-menu" hidden data-menu role="dialog" aria-modal="true" aria-label="Menu">
   <div class="dh-menu__top">
     <a class="dh-logo" href="../">
-      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="#FFFFFF"/><circle cx="20" cy="20.5" r="10.5" fill="none" stroke="#23466B" stroke-width="2.2"/><path d="M9.5 20.5h21" stroke="#23466B" stroke-width="2.2"/><circle cx="28.6" cy="11.6" r="3.1" fill="#F2A33A"/></svg>
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="#FFFFFF"/><circle cx="20" cy="20.5" r="10.5" fill="none" stroke="#23466B" stroke-width="2.2"/><path d="M9.5 20.5h21" stroke="#23466B" stroke-width="2.2"/><circle cx="28.6" cy="11.6" r="3.1" fill="#10C3EF"/></svg>
       <span class="dh-logo__t"><b style="color:#fff">Dar Al Hikma</b><span>Specialist Centre, Muscat</span></span>
     </a>
     <button class="dh-menu__close" type="button" data-menu-close><span class="sr">Close menu</span><i class="ph ph-x" aria-hidden="true"></i></button>
@@ -707,7 +704,7 @@ body .btn-amber:hover,body .btn-amber:focus-visible{background:#FF8442;color:var
   <div class="wrap dh-footer__top">
     <div>
       <a class="dh-logo" href="../" aria-label="Dar Al Hikma Specialist Centre, home">
-        <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="#FFFFFF"/><circle cx="20" cy="20.5" r="10.5" fill="none" stroke="#23466B" stroke-width="2.2"/><path d="M9.5 20.5h21" stroke="#23466B" stroke-width="2.2"/><circle cx="28.6" cy="11.6" r="3.1" fill="#F2A33A"/></svg>
+        <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="#FFFFFF"/><circle cx="20" cy="20.5" r="10.5" fill="none" stroke="#23466B" stroke-width="2.2"/><path d="M9.5 20.5h21" stroke="#23466B" stroke-width="2.2"/><circle cx="28.6" cy="11.6" r="3.1" fill="#10C3EF"/></svg>
         <span class="dh-logo__t"><b>Dar Al Hikma</b><span>Specialist Centre, Muscat</span></span>
         <span class="dh-logo__ar" lang="ar">دار الحكمة</span>
       </a>

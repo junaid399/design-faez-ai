@@ -102,8 +102,8 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
   --juniper-2: #174B41;
   --mint: #DCEBE4;
   --mint-2: #EAF3EF;
-  --coral: #E0573A;
-  --coral-ink: #B8401F;
+  --coral: #E34E70;
+  --coral-ink: #C82249;
   --line: #D5E0DB;
   --on-dark: #EAF3EF;
   --on-dark-muted: #A9C4BA;
@@ -224,7 +224,7 @@ body .nb-menu__close:hover { background: rgba(255, 255, 255, .16); color: #fff; 
 .nb-footer h3 { font-size: 15px; font-weight: 700; letter-spacing: .01em; color: #fff; margin-bottom: 16px; }
 .nb-footer .nb-logo__text b { color: #fff; }
 .nb-footer .nb-logo__text span { color: var(--on-dark-muted); }
-.nb-footer .nb-logo__ar { color: #F4A08C; border-color: rgba(234, 243, 239, .2); }
+.nb-footer .nb-logo__ar { color: #F59BB0; border-color: rgba(234, 243, 239, .2); }
 .nb-footer__about { margin-top: 18px; color: var(--on-dark-muted); font-size: 15.5px; max-width: 34ch; }
 .nb-footer__links { display: grid; gap: 10px; font-size: 15.5px; }
 .nb-footer__links a { color: var(--on-dark); opacity: .88; transition: opacity .2s; }
@@ -234,7 +234,7 @@ body .nb-menu__close:hover { background: rgba(255, 255, 255, .16); color: #fff; 
 .nb-footer .nb-status { color: var(--on-dark); margin-top: 10px; }
 .nb-footer__contact { display: grid; gap: 12px; font-size: 15.5px; }
 .nb-footer__contact a, .nb-footer__contact span { display: inline-flex; gap: 10px; align-items: flex-start; color: var(--on-dark); }
-.nb-footer__contact i { font-size: 20px; color: #F4A08C; margin-top: 2px; }
+.nb-footer__contact i { font-size: 20px; color: #F59BB0; margin-top: 2px; }
 .nb-footer__base { margin-top: 64px; padding-top: 24px; border-top: 1px solid rgba(234, 243, 239, .14); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; font-size: 13.5px; color: var(--on-dark-muted); }
 .nb-footer__base a { text-decoration: underline; text-underline-offset: 3px; }
 
@@ -246,7 +246,7 @@ body .field :is(input, select, textarea) { width: 100%; min-height: 52px; paddin
 body .field textarea { min-height: 112px; resize: vertical; }
 body .field select { appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 256 256'%3E%3Cpath fill='%230E3B33' d='M213.66 101.66l-80 80a8 8 0 0 1-11.32 0l-80-80a8 8 0 0 1 11.32-11.32L128 164.69l74.34-74.35a8 8 0 0 1 11.32 11.32Z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 42px; }
 body .field :is(input, select, textarea):focus { outline: none; border-color: var(--juniper); box-shadow: 0 0 0 4px rgba(14, 59, 51, .12); }
-body .field :is(input, select, textarea)[aria-invalid="true"] { border-color: var(--coral-ink); box-shadow: 0 0 0 4px rgba(224, 87, 58, .12); }
+body .field :is(input, select, textarea)[aria-invalid="true"] { border-color: var(--coral-ink); box-shadow: 0 0 0 4px rgba(227, 78, 112, .12); }
 body .field input::placeholder, body .field textarea::placeholder { color: #7A8984; }
 .field__err { font-size: 13.5px; color: var(--coral-ink); font-weight: 600; min-height: 0; }
 .field__err:empty { display: none; }
@@ -275,10 +275,9 @@ body .field input::placeholder, body .field textarea::placeholder { color: #7A89
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 
-/* Bright accent on primary calls to action (2026-10-26) */
-:root{--nb-pop:#D63A1C;}
-body .btn-primary{background:var(--nb-pop);color:#fff;}
-body .btn-primary:hover,body .btn-primary:focus-visible{background:#B32E12;color:#fff;}
+/* Accent (2026-11-17): rose call to action on the juniper palette */
+body .btn-primary{background:var(--coral-ink);color:#fff;}
+body .btn-primary:hover,body .btn-primary:focus-visible{background:var(--juniper);color:#fff;}
 
 /* ---------- Departments: page head ---------- */
 .dh { padding: calc(var(--header) + 48px) 0 0; }
@@ -349,7 +348,7 @@ body .ex__tab[aria-selected="true"], body .ex__tab[aria-selected="true"]:hover {
 .dg__name { font-weight: 650; font-size: 15.5px; padding-right: 18px; }
 .dg__track { position: relative; height: 60px; display: block; }
 .dg__bar { position: absolute; left: 0; top: 50%; height: 12px; margin-top: -6px; width: var(--to); background: var(--juniper); border-radius: 999px; transform-origin: left center; }
-.dg__bar::after { content: ""; position: absolute; right: -7px; top: 50%; width: 14px; height: 14px; margin-top: -7px; border-radius: 50%; background: var(--coral); box-shadow: 0 0 0 4px rgba(224, 87, 58, .18); }
+.dg__bar::after { content: ""; position: absolute; right: -7px; top: 50%; width: 14px; height: 14px; margin-top: -7px; border-radius: 50%; background: var(--coral); box-shadow: 0 0 0 4px rgba(227, 78, 112, .18); }
 .dg__val { position: absolute; left: calc(var(--to) + 20px); top: 50%; transform: translateY(-50%); font-size: 14px; font-weight: 700; color: var(--juniper); white-space: nowrap; }
 .dg__val--end { left: auto; right: 0; transform: translateY(-165%); }
 
@@ -372,7 +371,7 @@ body .ex__tab[aria-selected="true"], body .ex__tab[aria-selected="true"]:hover {
 .rf__panel .h2 { color: #fff; margin-bottom: 16px; }
 .rf__list { list-style: none; display: grid; gap: 14px; margin: 26px 0 30px !important; }
 .rf__list li { display: flex; gap: 12px; align-items: flex-start; color: var(--on-dark); font-size: 15.5px; }
-.rf__list i { color: #F4A08C; font-size: 22px; flex: none; }
+.rf__list i { color: #F59BB0; font-size: 22px; flex: none; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 1023px) {
@@ -428,7 +427,7 @@ body .ex__tab[aria-selected="true"], body .ex__tab[aria-selected="true"]:hover {
 <header class="nb-header" data-header>
   <div class="nb-header__in wrap">
     <a class="nb-logo" href="../" aria-label="Nabd Medical Complex, home">
-      <span class="nb-logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#0E3B33"/><path d="M6 21.5h7.5l3-7.5 5 14 3.2-9.5 2.3 3h6.5" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34.2" cy="21.5" r="2.3" fill="#E0573A"/></svg></span>
+      <span class="nb-logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#0E3B33"/><path d="M6 21.5h7.5l3-7.5 5 14 3.2-9.5 2.3 3h6.5" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34.2" cy="21.5" r="2.3" fill="#E34E70"/></svg></span>
       <span class="nb-logo__text"><b>Nabd</b><span>Medical Complex</span></span>
       <span class="nb-logo__ar" lang="ar">نبض</span>
     </a>
@@ -448,7 +447,7 @@ body .ex__tab[aria-selected="true"], body .ex__tab[aria-selected="true"]:hover {
 <div class="nb-menu" id="nb-menu" hidden data-menu role="dialog" aria-modal="true" aria-label="Menu">
   <div class="nb-menu__top">
     <a class="nb-logo" href="../">
-      <span class="nb-logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#EAF3EF"/><path d="M6 21.5h7.5l3-7.5 5 14 3.2-9.5 2.3 3h6.5" fill="none" stroke="#0E3B33" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34.2" cy="21.5" r="2.3" fill="#E0573A"/></svg></span>
+      <span class="nb-logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#EAF3EF"/><path d="M6 21.5h7.5l3-7.5 5 14 3.2-9.5 2.3 3h6.5" fill="none" stroke="#0E3B33" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34.2" cy="21.5" r="2.3" fill="#E34E70"/></svg></span>
       <span class="nb-logo__text"><b style="color:#fff">Nabd</b><span>Medical Complex</span></span>
     </a>
     <button class="nb-menu__close" type="button" data-menu-close><span class="sr">Close menu</span><i class="ph ph-x" aria-hidden="true"></i></button>
@@ -779,7 +778,7 @@ body .ex__tab[aria-selected="true"], body .ex__tab[aria-selected="true"]:hover {
   <div class="wrap nb-footer__grid">
     <div>
       <a class="nb-logo" href="../" aria-label="Nabd Medical Complex, home">
-        <span class="nb-logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#EAF3EF"/><path d="M6 21.5h7.5l3-7.5 5 14 3.2-9.5 2.3 3h6.5" fill="none" stroke="#0E3B33" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34.2" cy="21.5" r="2.3" fill="#E0573A"/></svg></span>
+        <span class="nb-logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#EAF3EF"/><path d="M6 21.5h7.5l3-7.5 5 14 3.2-9.5 2.3 3h6.5" fill="none" stroke="#0E3B33" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34.2" cy="21.5" r="2.3" fill="#E34E70"/></svg></span>
         <span class="nb-logo__text"><b>Nabd</b><span>Medical Complex</span></span>
         <span class="nb-logo__ar" lang="ar">نبض</span>
       </a>

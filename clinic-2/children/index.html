@@ -87,8 +87,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   --rh-muted: #52606D;
   --rh-navy: #102A43;
   --rh-navy-2: #183A5C;
-  --rh-butter: #FFD66B;
-  --rh-butter-2: #FFE7A3;
+  --rh-butter: #E3D4FF;
+  --rh-butter-2: #EEE4FF;
   --rh-sky: #EAF4FB;
   --rh-sky-2: #D6E9F6;
   --rh-blush: #FDEDE6;
@@ -135,7 +135,7 @@ body label { display: block; line-height: 1.3; }
 body table { border-collapse: collapse; width: 100%; margin: 0; border: 0; }
 body :is(th, td) { border: 0; padding: 0; text-align: left; vertical-align: top; }
 body table tbody > tr:nth-child(odd) > :is(td, th), body table tbody tr:hover > :is(td, th) { background-color: transparent; }
-:focus-visible { outline: 3px solid #E0A400; outline-offset: 3px; border-radius: 8px; }
+:focus-visible { outline: 3px solid #7A4FE0; outline-offset: 3px; border-radius: 8px; }
 .sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .skip { position: fixed; left: 16px; top: -60px; z-index: 200; background: var(--rh-navy); color: #fff !important; padding: 12px 18px; border-radius: 999px; font-weight: 600; }
 .skip:focus { top: 12px; }
@@ -184,7 +184,7 @@ body .btn i { font-size: 1.2em; }
 body .btn-navy { background: var(--rh-navy); color: #FFFDF7; }
 body .btn-navy:hover, body .btn-navy:focus-visible { background: var(--rh-navy-2); color: #FFFDF7; transform: translateY(-2px); }
 body .btn-butter { background: var(--rh-butter); color: var(--rh-ink); }
-body .btn-butter:hover, body .btn-butter:focus-visible { background: #FFCE4F; color: var(--rh-ink); transform: translateY(-2px); }
+body .btn-butter:hover, body .btn-butter:focus-visible { background: #DECCFF; color: var(--rh-ink); transform: translateY(-2px); }
 body .btn-ghost { background: transparent; color: var(--rh-ink); box-shadow: inset 0 0 0 2px rgba(16, 42, 67, .2); }
 body .btn-ghost:hover, body .btn-ghost:focus-visible { background: var(--rh-paper); color: var(--rh-ink); box-shadow: inset 0 0 0 2px var(--rh-ink); }
 body .btn-ghost-light { background: transparent; color: #fff; box-shadow: inset 0 0 0 2px rgba(244, 241, 232, .35); }
@@ -253,7 +253,7 @@ body .rh-menu__close:hover { background: rgba(255, 255, 255, .16); color: #fff; 
 .rh-footer .rh-status { color: var(--rh-on-navy); }
 .rh-footer .rh-logo__text span { color: var(--rh-on-navy-muted); }
 .rh-footer .rh-logo__ar { color: var(--rh-on-navy); }
-.rh-footer__blob { position: absolute; right: -120px; top: -150px; width: 440px; height: 440px; background: rgba(255, 214, 107, .08); border-radius: var(--rh-blob-b); pointer-events: none; }
+.rh-footer__blob { position: absolute; right: -120px; top: -150px; width: 440px; height: 440px; background: rgba(227, 212, 255, .08); border-radius: var(--rh-blob-b); pointer-events: none; }
 
 /* ---------- shared components ---------- */
 .sec-head { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px 64px; align-items: end; margin-bottom: clamp(40px, 5vw, 64px); }
@@ -267,7 +267,7 @@ body .rh-menu__close:hover { background: rgba(255, 255, 255, .16); color: #fff; 
 .cta-band .lead { margin-top: 16px; }
 .cta-band .btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .cta-band__media { justify-self: end; width: min(100%, 380px); }
-.stars { color: #E0A400; letter-spacing: 2px; }
+.stars { color: #7A4FE0; letter-spacing: 2px; }
 
 /* accordion */
 .acc { border-top: 1.5px solid var(--rh-line); }
@@ -285,7 +285,7 @@ body .rh-menu__close:hover { background: rgba(255, 255, 255, .16); color: #fff; 
 .field label small { color: var(--rh-muted); font-weight: 400; }
 body .field :is(input, textarea, select) { width: 100%; min-height: 54px; padding: 12px 18px; border-radius: 18px; border: 1.5px solid #DCD5C2; background: var(--rh-paper); font: inherit; font-size: 17px; color: var(--rh-ink); transition: border-color .2s, box-shadow .2s; box-shadow: none; }
 body .field textarea { min-height: 120px; resize: vertical; }
-body .field :is(input, textarea, select):focus { outline: none; border-color: var(--rh-ink); box-shadow: 0 0 0 4px rgba(255, 214, 107, .6); }
+body .field :is(input, textarea, select):focus { outline: none; border-color: var(--rh-ink); box-shadow: 0 0 0 4px rgba(227, 212, 255, .6); }
 .field__err { color: #B42318; font-size: 14.5px; }
 .field__err:empty { display: none; }
 :is(input, textarea, select)[aria-invalid="true"] { border-color: #B42318 !important; }
@@ -327,9 +327,9 @@ body .field :is(input, textarea, select):focus { outline: none; border-color: va
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 
-/* Bright accent on primary calls to action (2026-10-26) */
-:root{--rh-pop:#FF6B3D;}
-body .btn-navy{background:var(--rh-pop);color:var(--rh-ink);}
+/* Accent (2026-11-17): purple call to action, lavender details, navy sections */
+:root{--rh-pop:#6B45D6;}
+body .btn-navy{background:var(--rh-pop);color:#fff;}
 body .btn-navy:hover,body .btn-navy:focus-visible{background:var(--rh-navy);color:#FFFDF7;}
 
 /* ---------- children: centred hero with photo trio ---------- */
@@ -496,7 +496,7 @@ body .vx__table tbody tr:last-child > * { border-bottom: 0; }
 <header class="rh-header" data-header>
   <div class="rh-header__in wrap">
     <a class="rh-logo" href="../" aria-label="Rahma Women and Children Clinic, home">
-      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 2.5c12 0 21.5 7.6 21.5 20.3S36.8 45.5 24 45.5 2.5 37 2.5 24.6 12 2.5 24 2.5z" fill="#FFD66B"/><path d="M13.5 26.5c0 7.4 4.9 11.6 10.5 11.6s10.5-4.2 10.5-11.6" fill="none" stroke="#102A43" stroke-width="3.2" stroke-linecap="round"/><circle cx="23" cy="17.5" r="5.6" fill="#102A43"/><circle cx="31.2" cy="26.4" r="3.3" fill="#102A43"/></svg>
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 2.5c12 0 21.5 7.6 21.5 20.3S36.8 45.5 24 45.5 2.5 37 2.5 24.6 12 2.5 24 2.5z" fill="#E3D4FF"/><path d="M13.5 26.5c0 7.4 4.9 11.6 10.5 11.6s10.5-4.2 10.5-11.6" fill="none" stroke="#102A43" stroke-width="3.2" stroke-linecap="round"/><circle cx="23" cy="17.5" r="5.6" fill="#102A43"/><circle cx="31.2" cy="26.4" r="3.3" fill="#102A43"/></svg>
       <span class="rh-logo__text"><b>Rahma</b><span>Women &amp; Children Clinic</span></span>
       <span class="rh-logo__ar" lang="ar">رحمة</span>
     </a>
@@ -515,7 +515,7 @@ body .vx__table tbody tr:last-child > * { border-bottom: 0; }
 <div class="rh-menu" id="rh-menu" hidden data-menu role="dialog" aria-modal="true" aria-label="Menu">
   <div class="rh-menu__top">
     <a class="rh-logo" href="../">
-      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 2.5c12 0 21.5 7.6 21.5 20.3S36.8 45.5 24 45.5 2.5 37 2.5 24.6 12 2.5 24 2.5z" fill="#FFD66B"/><path d="M13.5 26.5c0 7.4 4.9 11.6 10.5 11.6s10.5-4.2 10.5-11.6" fill="none" stroke="#102A43" stroke-width="3.2" stroke-linecap="round"/><circle cx="23" cy="17.5" r="5.6" fill="#102A43"/><circle cx="31.2" cy="26.4" r="3.3" fill="#102A43"/></svg>
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 2.5c12 0 21.5 7.6 21.5 20.3S36.8 45.5 24 45.5 2.5 37 2.5 24.6 12 2.5 24 2.5z" fill="#E3D4FF"/><path d="M13.5 26.5c0 7.4 4.9 11.6 10.5 11.6s10.5-4.2 10.5-11.6" fill="none" stroke="#102A43" stroke-width="3.2" stroke-linecap="round"/><circle cx="23" cy="17.5" r="5.6" fill="#102A43"/><circle cx="31.2" cy="26.4" r="3.3" fill="#102A43"/></svg>
       <span class="rh-logo__text"><b style="color:#fff">Rahma</b><span>Women &amp; Children Clinic</span></span>
     </a>
     <button class="rh-menu__close" type="button" data-menu-close><span class="sr">Close menu</span><i class="ph ph-x" aria-hidden="true"></i></button>
@@ -728,7 +728,7 @@ body .vx__table tbody tr:last-child > * { border-bottom: 0; }
     <div class="rh-footer__grid">
       <div>
         <a class="rh-logo" href="../" aria-label="Rahma Women and Children Clinic, home">
-          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 2.5c12 0 21.5 7.6 21.5 20.3S36.8 45.5 24 45.5 2.5 37 2.5 24.6 12 2.5 24 2.5z" fill="#FFD66B"/><path d="M13.5 26.5c0 7.4 4.9 11.6 10.5 11.6s10.5-4.2 10.5-11.6" fill="none" stroke="#102A43" stroke-width="3.2" stroke-linecap="round"/><circle cx="23" cy="17.5" r="5.6" fill="#102A43"/><circle cx="31.2" cy="26.4" r="3.3" fill="#102A43"/></svg>
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 2.5c12 0 21.5 7.6 21.5 20.3S36.8 45.5 24 45.5 2.5 37 2.5 24.6 12 2.5 24 2.5z" fill="#E3D4FF"/><path d="M13.5 26.5c0 7.4 4.9 11.6 10.5 11.6s10.5-4.2 10.5-11.6" fill="none" stroke="#102A43" stroke-width="3.2" stroke-linecap="round"/><circle cx="23" cy="17.5" r="5.6" fill="#102A43"/><circle cx="31.2" cy="26.4" r="3.3" fill="#102A43"/></svg>
           <span class="rh-logo__text"><b>Rahma</b><span>Women &amp; Children Clinic</span></span>
           <span class="rh-logo__ar" lang="ar">رحمة</span>
         </a>

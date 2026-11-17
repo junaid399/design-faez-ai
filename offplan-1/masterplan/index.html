@@ -87,8 +87,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   --rw-olive: #4F5D2F;
   --rw-olive-deep: #3D4824;
   --rw-olive-2: #5F6E3B;
-  --rw-brick: #A8432F;
-  --rw-brick-deep: #8C3524;
+  --rw-brick: #B03170;
+  --rw-brick-deep: #92255C;
   --rw-sand: #D9C9A8;
   --rw-sage: #9AA77A;
   --rw-sage-soft: #DDE2CF;
@@ -290,7 +290,7 @@ body .mp__chip[aria-pressed="true"] { background: var(--rw-olive); color: #fff; 
 .pl { stroke: #FBFBF6; stroke-width: 1; cursor: pointer; transition: opacity .25s, filter .2s; }
 .pl--avail { fill: #9AA77A; }
 .pl--res { fill: #D9C9A8; }
-.pl--sold { fill: #A8432F; }
+.pl--sold { fill: #B03170; }
 .pl--soon { stroke: #C6C9BA; }
 .mp-svg .pl:hover, .mp-svg .pl.is-on { stroke: #1C1E17; stroke-width: 2.5; }
 .mp-svg .pl.is-dim { opacity: .16; }
@@ -298,7 +298,7 @@ body .mp__chip[aria-pressed="true"] { background: var(--rw-olive); color: #fff; 
 .mp-gate circle { fill: #4F5D2F; }
 .mp-gate text, .mp-scale text { font-size: 13px; font-weight: 600; fill: #5E6255; }
 .mp-north circle { fill: #FAFAF6; stroke: #C6C9BA; }
-.mp-north path { fill: #A8432F; }
+.mp-north path { fill: #B03170; }
 .mp-north text { font-size: 12px; font-weight: 700; fill: #1C1E17; }
 .mp-scale rect { fill: #1C1E17; }
 .mp-scale rect.w { fill: #FAFAF6; stroke: #1C1E17; stroke-width: 1; }
@@ -347,10 +347,7 @@ body .mp__chip[aria-pressed="true"] { background: var(--rw-olive); color: #fff; 
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
 
-/* Bright accent on primary calls to action (2026-10-26) */
-:root{--rw-pop:#D63A1C;}
-body .btn-brick{background:var(--rw-pop);color:#fff;}
-body .btn-brick:hover,body .btn-brick:focus-visible{background:#B32E12;color:#fff;}
+/* 2026-11-17: the orange call-to-action override of 2026-10-26 was removed */
 
 /* ---------- hero: copy + big number grid ---------- */
 .mh { position: relative; padding: calc(var(--rw-header) + clamp(48px, 6vw, 88px)) 0 clamp(48px, 5vw, 72px); overflow: hidden; }
@@ -444,12 +441,12 @@ body .mpb__toggle input { position: absolute; opacity: 0; width: 1px; height: 1p
 .st__tree circle { fill: #7E8C55; opacity: .9; }
 .st__tree rect, .st__garden rect:nth-of-type(n+3) { fill: #6B5A40; }
 .st__road rect { fill: #5E6255; }
-.st__people circle, .st__people rect { fill: #A8432F; }
+.st__people circle, .st__people rect { fill: #B03170; }
 .st__car rect { fill: #1C1E17; }
 .st__car circle { fill: #5E6255; }
 .st__dims path { fill: none; stroke: #1C1E17; stroke-width: 1.2; }
 .st__dims text { font-size: 12px; font-weight: 600; fill: #1C1E17; text-anchor: middle; }
-.st__dims .st__total { font-family: "Young Serif", Georgia, serif; font-size: 17px; font-weight: 400; fill: #A8432F; }
+.st__dims .st__total { font-family: "Young Serif", Georgia, serif; font-size: 17px; font-weight: 400; fill: #B03170; }
 .st__photos { display: grid; grid-template-columns: 1fr 1.25fr .8fr; gap: 16px; margin-top: 20px; align-items: stretch; }
 .st__p1 { aspect-ratio: 1024 / 864; }
 .st__p2 { aspect-ratio: auto; }
@@ -508,7 +505,7 @@ body .mpb__toggle input { position: absolute; opacity: 0; width: 1px; height: 1p
 <header class="rw-header" data-header>
   <div class="rw-header__in wrap">
     <a class="rw-logo" href="../" aria-label="Rawabi Hills Residences, home">
-      <svg class="rw-logo__mark" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="10" fill="#4F5D2F"/><path d="M6 31c6-7 10-10 16-10s10 3 16 10" fill="none" stroke="#FAFAF6" stroke-width="2.2" stroke-linecap="round"/><path d="M10 25c4-5 8-7.5 12-7.5S30 20 34 25" fill="none" stroke="#FAFAF6" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/><path d="M14 19.5c2.6-3 5.2-4.5 8-4.5s5.4 1.5 8 4.5" fill="none" stroke="#FAFAF6" stroke-opacity=".35" stroke-width="1.8" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#C9583F"/></svg>
+      <svg class="rw-logo__mark" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="10" fill="#4F5D2F"/><path d="M6 31c6-7 10-10 16-10s10 3 16 10" fill="none" stroke="#FAFAF6" stroke-width="2.2" stroke-linecap="round"/><path d="M10 25c4-5 8-7.5 12-7.5S30 20 34 25" fill="none" stroke="#FAFAF6" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/><path d="M14 19.5c2.6-3 5.2-4.5 8-4.5s5.4 1.5 8 4.5" fill="none" stroke="#FAFAF6" stroke-opacity=".35" stroke-width="1.8" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#CC4B8C"/></svg>
       <span class="rw-logo__text"><b>Rawabi Hills</b><span>Residences, North Riyadh</span></span>
       <span class="rw-logo__ar" lang="ar">روابي</span>
     </a>
@@ -689,7 +686,7 @@ body .mpb__toggle input { position: absolute; opacity: 0; width: 1px; height: 1p
       <svg viewBox="0 0 320 320" role="img" aria-labelledby="lu-t">
         <title id="lu-t">Land use of the 41 hectare site: villa plots 48%, parks and wadi greenway 22%, streets and shaded walks 18%, mosque, school and clubhouse 7%, daily retail 5%</title>
         <g transform="rotate(-90 160 160)" fill="none" stroke-width="44">
-          <circle cx="160" cy="160" r="118" pathLength="100" stroke="#A8432F" stroke-dasharray="47.6 100" stroke-dashoffset="0" data-ring="47.6"/>
+          <circle cx="160" cy="160" r="118" pathLength="100" stroke="#B03170" stroke-dasharray="47.6 100" stroke-dashoffset="0" data-ring="47.6"/>
           <circle cx="160" cy="160" r="118" pathLength="100" stroke="#4F5D2F" stroke-dasharray="21.6 100" stroke-dashoffset="-48" data-ring="21.6"/>
           <circle cx="160" cy="160" r="118" pathLength="100" stroke="#9AA77A" stroke-dasharray="17.6 100" stroke-dashoffset="-70" data-ring="17.6"/>
           <circle cx="160" cy="160" r="118" pathLength="100" stroke="#D9C9A8" stroke-dasharray="6.6 100" stroke-dashoffset="-88" data-ring="6.6"/>
@@ -705,7 +702,7 @@ body .mpb__toggle input { position: absolute; opacity: 0; width: 1px; height: 1p
       <table class="lu__table" data-reveal>
         <thead><tr><th scope="col">Use</th><th scope="col">Area</th><th scope="col">Share</th></tr></thead>
         <tbody>
-          <tr><td><i class="k" style="background:#A8432F"></i>Villa plots</td><td>19.7 ha</td><td>48%</td></tr>
+          <tr><td><i class="k" style="background:#B03170"></i>Villa plots</td><td>19.7 ha</td><td>48%</td></tr>
           <tr><td><i class="k" style="background:#4F5D2F"></i>Central park and wadi greenway</td><td>9.0 ha</td><td>22%</td></tr>
           <tr><td><i class="k" style="background:#9AA77A"></i>Streets and shaded walks</td><td>7.4 ha</td><td>18%</td></tr>
           <tr><td><i class="k" style="background:#D9C9A8"></i>Mosque, school and clubhouse</td><td>2.9 ha</td><td>7%</td></tr>

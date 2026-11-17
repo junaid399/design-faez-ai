@@ -87,8 +87,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   --rw-olive: #4F5D2F;
   --rw-olive-deep: #3D4824;
   --rw-olive-2: #5F6E3B;
-  --rw-brick: #A8432F;
-  --rw-brick-deep: #8C3524;
+  --rw-brick: #B03170;
+  --rw-brick-deep: #92255C;
   --rw-sand: #D9C9A8;
   --rw-sage: #9AA77A;
   --rw-sage-soft: #DDE2CF;
@@ -290,7 +290,7 @@ body .mp__chip[aria-pressed="true"] { background: var(--rw-olive); color: #fff; 
 .pl { stroke: #FBFBF6; stroke-width: 1; cursor: pointer; transition: opacity .25s, filter .2s; }
 .pl--avail { fill: #9AA77A; }
 .pl--res { fill: #D9C9A8; }
-.pl--sold { fill: #A8432F; }
+.pl--sold { fill: #B03170; }
 .pl--soon { stroke: #C6C9BA; }
 .mp-svg .pl:hover, .mp-svg .pl.is-on { stroke: #1C1E17; stroke-width: 2.5; }
 .mp-svg .pl.is-dim { opacity: .16; }
@@ -298,7 +298,7 @@ body .mp__chip[aria-pressed="true"] { background: var(--rw-olive); color: #fff; 
 .mp-gate circle { fill: #4F5D2F; }
 .mp-gate text, .mp-scale text { font-size: 13px; font-weight: 600; fill: #5E6255; }
 .mp-north circle { fill: #FAFAF6; stroke: #C6C9BA; }
-.mp-north path { fill: #A8432F; }
+.mp-north path { fill: #B03170; }
 .mp-north text { font-size: 12px; font-weight: 700; fill: #1C1E17; }
 .mp-scale rect { fill: #1C1E17; }
 .mp-scale rect.w { fill: #FAFAF6; stroke: #1C1E17; stroke-width: 1; }
@@ -347,10 +347,7 @@ body .mp__chip[aria-pressed="true"] { background: var(--rw-olive); color: #fff; 
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
 
-/* Bright accent on primary calls to action (2026-10-26) */
-:root{--rw-pop:#D63A1C;}
-body .btn-brick{background:var(--rw-pop);color:#fff;}
-body .btn-brick:hover,body .btn-brick:focus-visible{background:#B32E12;color:#fff;}
+/* 2026-11-17: the orange call-to-action override of 2026-10-26 was removed */
 
 /* ---------- hero: banner with overlapping panel ---------- */
 .vh { padding: calc(var(--rw-header) + 28px) 0 0; }
@@ -487,7 +484,7 @@ body .ts__list [role=tab][aria-selected="true"] b { color: var(--rw-brick); }
 <header class="rw-header" data-header>
   <div class="rw-header__in wrap">
     <a class="rw-logo" href="../" aria-label="Rawabi Hills Residences, home">
-      <svg class="rw-logo__mark" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="10" fill="#4F5D2F"/><path d="M6 31c6-7 10-10 16-10s10 3 16 10" fill="none" stroke="#FAFAF6" stroke-width="2.2" stroke-linecap="round"/><path d="M10 25c4-5 8-7.5 12-7.5S30 20 34 25" fill="none" stroke="#FAFAF6" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/><path d="M14 19.5c2.6-3 5.2-4.5 8-4.5s5.4 1.5 8 4.5" fill="none" stroke="#FAFAF6" stroke-opacity=".35" stroke-width="1.8" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#C9583F"/></svg>
+      <svg class="rw-logo__mark" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="10" fill="#4F5D2F"/><path d="M6 31c6-7 10-10 16-10s10 3 16 10" fill="none" stroke="#FAFAF6" stroke-width="2.2" stroke-linecap="round"/><path d="M10 25c4-5 8-7.5 12-7.5S30 20 34 25" fill="none" stroke="#FAFAF6" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/><path d="M14 19.5c2.6-3 5.2-4.5 8-4.5s5.4 1.5 8 4.5" fill="none" stroke="#FAFAF6" stroke-opacity=".35" stroke-width="1.8" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#CC4B8C"/></svg>
       <span class="rw-logo__text"><b>Rawabi Hills</b><span>Residences, North Riyadh</span></span>
       <span class="rw-logo__ar" lang="ar">روابي</span>
     </a>

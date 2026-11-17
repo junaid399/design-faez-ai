@@ -102,8 +102,8 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
   --juniper-2: #174B41;
   --mint: #DCEBE4;
   --mint-2: #EAF3EF;
-  --coral: #E0573A;
-  --coral-ink: #B8401F;
+  --coral: #E34E70;
+  --coral-ink: #C82249;
   --line: #D5E0DB;
   --on-dark: #EAF3EF;
   --on-dark-muted: #A9C4BA;
@@ -224,7 +224,7 @@ body .nb-menu__close:hover { background: rgba(255, 255, 255, .16); color: #fff; 
 .nb-footer h3 { font-size: 15px; font-weight: 700; letter-spacing: .01em; color: #fff; margin-bottom: 16px; }
 .nb-footer .nb-logo__text b { color: #fff; }
 .nb-footer .nb-logo__text span { color: var(--on-dark-muted); }
-.nb-footer .nb-logo__ar { color: #F4A08C; border-color: rgba(234, 243, 239, .2); }
+.nb-footer .nb-logo__ar { color: #F59BB0; border-color: rgba(234, 243, 239, .2); }
 .nb-footer__about { margin-top: 18px; color: var(--on-dark-muted); font-size: 15.5px; max-width: 34ch; }
 .nb-footer__links { display: grid; gap: 10px; font-size: 15.5px; }
 .nb-footer__links a { color: var(--on-dark); opacity: .88; transition: opacity .2s; }
@@ -234,7 +234,7 @@ body .nb-menu__close:hover { background: rgba(255, 255, 255, .16); color: #fff; 
 .nb-footer .nb-status { color: var(--on-dark); margin-top: 10px; }
 .nb-footer__contact { display: grid; gap: 12px; font-size: 15.5px; }
 .nb-footer__contact a, .nb-footer__contact span { display: inline-flex; gap: 10px; align-items: flex-start; color: var(--on-dark); }
-.nb-footer__contact i { font-size: 20px; color: #F4A08C; margin-top: 2px; }
+.nb-footer__contact i { font-size: 20px; color: #F59BB0; margin-top: 2px; }
 .nb-footer__base { margin-top: 64px; padding-top: 24px; border-top: 1px solid rgba(234, 243, 239, .14); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; font-size: 13.5px; color: var(--on-dark-muted); }
 .nb-footer__base a { text-decoration: underline; text-underline-offset: 3px; }
 
@@ -246,7 +246,7 @@ body .field :is(input, select, textarea) { width: 100%; min-height: 52px; paddin
 body .field textarea { min-height: 112px; resize: vertical; }
 body .field select { appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 256 256'%3E%3Cpath fill='%230E3B33' d='M213.66 101.66l-80 80a8 8 0 0 1-11.32 0l-80-80a8 8 0 0 1 11.32-11.32L128 164.69l74.34-74.35a8 8 0 0 1 11.32 11.32Z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 42px; }
 body .field :is(input, select, textarea):focus { outline: none; border-color: var(--juniper); box-shadow: 0 0 0 4px rgba(14, 59, 51, .12); }
-body .field :is(input, select, textarea)[aria-invalid="true"] { border-color: var(--coral-ink); box-shadow: 0 0 0 4px rgba(224, 87, 58, .12); }
+body .field :is(input, select, textarea)[aria-invalid="true"] { border-color: var(--coral-ink); box-shadow: 0 0 0 4px rgba(227, 78, 112, .12); }
 body .field input::placeholder, body .field textarea::placeholder { color: #7A8984; }
 .field__err { font-size: 13.5px; color: var(--coral-ink); font-weight: 600; min-height: 0; }
 .field__err:empty { display: none; }
@@ -275,10 +275,9 @@ body .field input::placeholder, body .field textarea::placeholder { color: #7A89
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 
-/* Bright accent on primary calls to action (2026-10-26) */
-:root{--nb-pop:#D63A1C;}
-body .btn-primary{background:var(--nb-pop);color:#fff;}
-body .btn-primary:hover,body .btn-primary:focus-visible{background:#B32E12;color:#fff;}
+/* Accent (2026-11-17): rose call to action on the juniper palette */
+body .btn-primary{background:var(--coral-ink);color:#fff;}
+body .btn-primary:hover,body .btn-primary:focus-visible{background:var(--juniper);color:#fff;}
 
 /* ---------- Book: header sits on the dark booking section, so keep it solid ---------- */
 .nb-header { background: rgba(244, 247, 245, .94); -webkit-backdrop-filter: saturate(160%) blur(14px); backdrop-filter: saturate(160%) blur(14px); box-shadow: 0 1px 0 var(--line); }
@@ -292,7 +291,7 @@ body .btn-primary:hover,body .btn-primary:focus-visible{background:#B32E12;color
 .bk__title { color: #fff; max-width: 11ch; }
 .bk__next { list-style: none; display: grid; gap: 12px; }
 .bk__next li { display: flex; gap: 14px; align-items: center; color: var(--on-dark); font-size: 16px; }
-.bk__next i { width: 40px; height: 40px; border-radius: 12px; background: rgba(255, 255, 255, .08); display: grid; place-items: center; font-size: 20px; color: #F4A08C; flex: none; }
+.bk__next i { width: 40px; height: 40px; border-radius: 12px; background: rgba(255, 255, 255, .08); display: grid; place-items: center; font-size: 20px; color: #F59BB0; flex: none; }
 .bk__contact { display: flex; flex-wrap: wrap; gap: 10px; }
 .bk__img { width: 100%; aspect-ratio: 16 / 10; border-radius: 24px; margin-top: 6px; }
 .bk__card { background: var(--white); color: var(--ink); border-radius: 32px; padding: 36px; box-shadow: 0 40px 80px -40px rgba(0, 0, 0, .5); }
@@ -332,7 +331,7 @@ body .btn-primary:hover,body .btn-primary:focus-visible{background:#B32E12;color
 .wk__h { font-size: 13.5px; color: var(--muted); text-align: right; font-weight: 600; }
 .wk__row.is-today .wk__bar { background: var(--juniper); }
 .wk__row.is-today .wk__d, .wk__row.is-today .wk__h { color: var(--juniper); font-weight: 800; }
-.wk__nowdot { position: absolute; top: 3px; bottom: 3px; width: 3px; margin-left: -1px; border-radius: 2px; background: var(--coral); box-shadow: 0 0 0 3px rgba(224, 87, 58, .18); }
+.wk__nowdot { position: absolute; top: 3px; bottom: 3px; width: 3px; margin-left: -1px; border-radius: 2px; background: var(--coral); box-shadow: 0 0 0 3px rgba(227, 78, 112, .18); }
 .vs__note { display: flex; gap: 10px; margin-top: 24px; font-size: 14.5px; color: var(--muted); align-items: flex-start; }
 .vs__note i { color: var(--juniper); font-size: 19px; margin-top: 2px; flex: none; }
 .vs__map { background: var(--white); border-radius: 28px; padding: 12px; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); }
@@ -344,12 +343,12 @@ body .btn-primary:hover,body .btn-primary:focus-visible{background:#B32E12;color
 
 /* ---------- emergency ---------- */
 .em { padding: 0 0 clamp(72px, 9vw, 120px); }
-.em__box { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 24px; align-items: center; background: #FBEDE8; border-radius: 28px; padding: 28px 32px; border: 1.5px solid #F2C4B6; }
+.em__box { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 24px; align-items: center; background: #FBEDE8; border-radius: 28px; padding: 28px 32px; border: 1.5px solid #F4C1CC; }
 .em__icon { width: 62px; height: 62px; border-radius: 18px; background: var(--coral-ink); color: #fff; display: grid; place-items: center; font-size: 30px; }
-.em__text .h3 { margin-bottom: 6px; color: #5C2414; }
+.em__text .h3 { margin-bottom: 6px; color: #661629; }
 .em__text p { color: #6B4034; font-size: 15.5px; max-width: 72ch; }
 body .btn-alert { background: var(--coral-ink); color: #fff; }
-body .btn-alert:hover, body .btn-alert:focus-visible { background: #963217; color: #fff; transform: translateY(-2px); }
+body .btn-alert:hover, body .btn-alert:focus-visible { background: #A41939; color: #fff; transform: translateY(-2px); }
 
 /* ---------- responsive ---------- */
 @media (max-width: 1023px) {
@@ -379,7 +378,7 @@ body .btn-alert:hover, body .btn-alert:focus-visible { background: #963217; colo
 <header class="nb-header" data-header>
   <div class="nb-header__in wrap">
     <a class="nb-logo" href="../" aria-label="Nabd Medical Complex, home">
-      <span class="nb-logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#0E3B33"/><path d="M6 21.5h7.5l3-7.5 5 14 3.2-9.5 2.3 3h6.5" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34.2" cy="21.5" r="2.3" fill="#E0573A"/></svg></span>
+      <span class="nb-logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#0E3B33"/><path d="M6 21.5h7.5l3-7.5 5 14 3.2-9.5 2.3 3h6.5" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34.2" cy="21.5" r="2.3" fill="#E34E70"/></svg></span>
       <span class="nb-logo__text"><b>Nabd</b><span>Medical Complex</span></span>
       <span class="nb-logo__ar" lang="ar">نبض</span>
     </a>
@@ -399,7 +398,7 @@ body .btn-alert:hover, body .btn-alert:focus-visible { background: #963217; colo
 <div class="nb-menu" id="nb-menu" hidden data-menu role="dialog" aria-modal="true" aria-label="Menu">
   <div class="nb-menu__top">
     <a class="nb-logo" href="../">
-      <span class="nb-logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#EAF3EF"/><path d="M6 21.5h7.5l3-7.5 5 14 3.2-9.5 2.3 3h6.5" fill="none" stroke="#0E3B33" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34.2" cy="21.5" r="2.3" fill="#E0573A"/></svg></span>
+      <span class="nb-logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#EAF3EF"/><path d="M6 21.5h7.5l3-7.5 5 14 3.2-9.5 2.3 3h6.5" fill="none" stroke="#0E3B33" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34.2" cy="21.5" r="2.3" fill="#E34E70"/></svg></span>
       <span class="nb-logo__text"><b style="color:#fff">Nabd</b><span>Medical Complex</span></span>
     </a>
     <button class="nb-menu__close" type="button" data-menu-close><span class="sr">Close menu</span><i class="ph ph-x" aria-hidden="true"></i></button>
@@ -598,7 +597,7 @@ body .btn-alert:hover, body .btn-alert:focus-visible { background: #963217; colo
   <div class="wrap nb-footer__grid">
     <div>
       <a class="nb-logo" href="../" aria-label="Nabd Medical Complex, home">
-        <span class="nb-logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#EAF3EF"/><path d="M6 21.5h7.5l3-7.5 5 14 3.2-9.5 2.3 3h6.5" fill="none" stroke="#0E3B33" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34.2" cy="21.5" r="2.3" fill="#E0573A"/></svg></span>
+        <span class="nb-logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#EAF3EF"/><path d="M6 21.5h7.5l3-7.5 5 14 3.2-9.5 2.3 3h6.5" fill="none" stroke="#0E3B33" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34.2" cy="21.5" r="2.3" fill="#E34E70"/></svg></span>
         <span class="nb-logo__text"><b>Nabd</b><span>Medical Complex</span></span>
         <span class="nb-logo__ar" lang="ar">نبض</span>
       </a>
